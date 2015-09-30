@@ -35,7 +35,7 @@ For more information regarding logging levels [read le_js wiki first](https://gi
 ```js
 var app = angular.module('yourapp');
 
-app.controller('TelsaGotScrewdOverController', [
+app.controller('TeslaGotScrewdOverController', [
     '$scope',
     '$logentries',
     '$timeout',
