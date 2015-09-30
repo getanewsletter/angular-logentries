@@ -28,7 +28,30 @@ app.config([
 ]);
 ```
 
-### Basic usage
+### Lets log
+------------------------------
+For more information regarding logging levels [read le_js wiki first](https://github.com/logentries/le_js/wiki/API)
+
+```js
+var app = angular.module('yourapp');
+
+app.controller('TelsaGotScrewdOverController', [
+    '$scope',
+    '$logentries',
+    '$timeout',
+    function($scope, $logentries, $timeout) {
+        $logentries.info({
+            'event': 'user clicked',
+            'user_id': 1
+        });
+    }
+]);
+```
+
+### Error handling
+-----------------------------
+
+#### Basic usage
 
 ```js
 angular
@@ -45,7 +68,7 @@ angular
 });
 ```
 
-# Advanced usage
+#### Advanced usage
 
 ```js
 app.config([, function() {
