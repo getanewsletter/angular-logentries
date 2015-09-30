@@ -2,6 +2,14 @@
 Angular logentries
 
 
+### Installation
+
+```
+bower install angular-logentries
+```
+
+### Configuration
+
 ```js
 var app = angular.module('yourapp', [
     'logentries'
