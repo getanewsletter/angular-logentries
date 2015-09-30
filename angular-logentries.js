@@ -30,7 +30,9 @@
                                 // log to console if debug enabled
                                 if(debug === true) {
                                     $log[k].apply($log, arguments);
-                                } else if(initialized === true) {
+                                }
+
+                                if(initialized === true) {
                                     LE[k].apply(LE, arguments);
                                 }
 
