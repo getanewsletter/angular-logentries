@@ -5,9 +5,11 @@
         function() {
 
             var debug = false;
+            var initialized = false;
             var methods = ['log', 'info', 'warn', 'error'];
 
             this.init = function(token) {
+                initialized = true;
                 LE.init(token);
             };
 
@@ -28,7 +30,7 @@
                                 // log to console if debug enabled
                                 if(debug === true) {
                                     $log[k].apply($log, arguments);
-                                } else {
+                                } else if(initialized === true) {
                                     LE[k].apply(LE, arguments);
                                 }
 
