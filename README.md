@@ -21,8 +21,12 @@ app.config([
     '$logentriesProvider',
     function($logentriesProvider) {
 
-        // setDebug(true) outputs to console, setDebug(false) sends it to logentries
+        // setDebug(true) outputs to console
         $logentriesProvider.setDebug(true);
+
+        /**
+          * if no token is given no logs will be sent to logentries
+          */
         $logentriesProvider.init('yourtokengoeshere');
     }
 ]);
