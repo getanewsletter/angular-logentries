@@ -20,9 +20,7 @@
     "tests"
   ],
   "dependencies": {
-    "logentries": "~0.0.3"
-  },
-  "devDependencies": {
-    "angular": "^1.2.23"
+    "logentries": "~0.0.3",
+    "angular": ">=1.2.0"
   }
 }
